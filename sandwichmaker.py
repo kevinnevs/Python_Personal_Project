@@ -30,7 +30,7 @@ while True:
     extra = pyip.inputYesNo('Do you want paste ?')
     if extra == 'Yes':
         print("What type of paste do you want ?")
-        pyip.inputMenu(['mayo', 'mustard', 'lettuce', 'tomato'],
+        order["extra"] = pyip.inputMenu(['mayo', 'mustard', 'lettuce', 'tomato'],
                        numbered=True)
     orderNumber = pyip.inputInt('How many sandwich do you want ?', min=1)
 
